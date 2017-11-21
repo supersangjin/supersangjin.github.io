@@ -2,7 +2,7 @@
 
 name: Trineurotec
 paginate: 10
-url: # add your site url (format: https://example.com/)
+url: https://supersangjin.github.io # add your site url (format: https://example.com/)
 blog_theme: light # Or use dark
 lang: en
 languages: ["en", "kr"]

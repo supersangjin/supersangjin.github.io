@@ -1,0 +1,27 @@
+---
+layout: default_en
+title: "Products"
+description: ""
+---
+
+
+<ul class="article-list">
+  {% for post in site.categories.products_en %}
+    <li class="article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+      <img src= "{% asset_path '{{ post.image }}' %}" alt="{{ post.title }}"/>
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+        <h5>
+          {{ post.title }}
+        </h5>
+      </a>
+      <p>{{ post.description }}</p>
+      <div class="article-list-footer">
+        <div class="article-list-tags">
+          {% for tag in post.tags %}
+            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

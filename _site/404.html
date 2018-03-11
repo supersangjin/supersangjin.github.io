@@ -1,13 +1,33 @@
+<<<<<<< HEAD
+---
+permalink: /404.html
+sitemap: false
+---
+
+=======
+>>>>>>> 96907016371846ade570b47bf9beb07e38db20fd
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Trineurotec | Page not found</title>
+<<<<<<< HEAD
+  <title>{{ site.name }} | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-    <link rel="stylesheet" href="/assets/fonts.css">
+  {% if site.local_fonts %}
+    {% include stylesheet.html path="fonts" %}
+  {% endif %}
+
+  {% if site.blog_theme == "light" %}
+    {% stylesheet notfound-light %}
+    {% include stylesheet.html path="notfound-light" %}
+  {% else %}
+    {% include stylesheet.html path="notfound-dark" %}
+  {% endif %}
+=======
+  <title>Chalk | Page not found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
 
@@ -16,17 +36,33 @@
     <link rel="stylesheet" href="/assets/notfound-light.css">
 
   
+>>>>>>> 96907016371846ade570b47bf9beb07e38db20fd
 </head>
 <body>
   <main class="notfound-wrapper">
     <div class="notfound-content">
-      <h1><a href="/" title="Back to homepage">Trineurotec</a></h1>
+<<<<<<< HEAD
+      <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
+      <p>
+        Looks like you got lost. Let's get you back to the <a href="{{ '/' | relative_url }}">homepage</a>!
+=======
+      <h1><a href="/" title="Back to homepage">Chalk</a></h1>
       <p>
         Looks like you got lost. Let's get you back to the <a href="/">homepage</a>!
+>>>>>>> 96907016371846ade570b47bf9beb07e38db20fd
       </p>
     </div>
   </main>
 
+<<<<<<< HEAD
+  {% unless site.local_fonts %}
+    {% include javascript.html path="webfonts" %}
+  {% endunless %}
+=======
   
+    <script src="/assets/webfonts.js"></script>
+
+  
+>>>>>>> 96907016371846ade570b47bf9beb07e38db20fd
 </body>
 </html>

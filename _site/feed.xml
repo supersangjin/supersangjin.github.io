@@ -1,55 +1,90 @@
-<<<<<<< HEAD
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-      </item>
-    {% endfor %}
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Chalk</title>
+    <title>Trineurotec</title>
     <description></description>
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Introducing chalk</title>
-        <description>Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.</description>
+        <title>제품 1</title>
+        <description>Product 1 description</description>
+        <pubDate>Thu, 20 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product1-ko</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product1-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 1</title>
+        <description>Product 1 description</description>
+        <pubDate>Thu, 20 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product1</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product1</guid>
+      </item>
+    
+      <item>
+        <title>제품 2</title>
+        <description>Product 2 description</description>
+        <pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product2-ko</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product2-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 2</title>
+        <description>Product 2 description</description>
+        <pubDate>Wed, 19 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product2</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product2</guid>
+      </item>
+    
+      <item>
+        <title>제품 3</title>
+        <description>Product 3 description</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product3-ko</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product3-ko</guid>
+      </item>
+    
+      <item>
+        <title>Product 3</title>
+        <description>Product 3 description</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/product3</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/product3</guid>
+      </item>
+    
+      <item>
+        <title>우리 회사의 목표</title>
+        <description>We want to give hope to children with ADHD through relieving their stress and pain, including their families’. We aim to make South Korea the number one medical healthcare-providing country.</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/ourvision-ko</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/ourvision-ko</guid>
+      </item>
+    
+      <item>
+        <title>Our Vision</title>
+        <description>We want to give hope to children with ADHD through relieving their stress and pain, including their families’. We aim to make South Korea the number one medical healthcare-providing country.</description>
+        <pubDate>Tue, 18 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/ourvision</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/ourvision</guid>
+      </item>
+    
+      <item>
+        <title>질병</title>
+        <description>Attention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder which has three core symptoms: inattention, hyperactivity and impulsivity. According to adhd-institute.com there are between 5.29% - 7.1% of children and adolescents suffer from ADHD and there is a higher prevalence in males than females.</description>
         <pubDate>Mon, 17 Oct 2016 00:00:00 +0900</pubDate>
-        <link>/posts/introducing-chalk</link>
-        <guid isPermaLink="true">/posts/introducing-chalk</guid>
+        <link>http://localhost:4000/posts/disorders-ko</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/disorders-ko</guid>
       </item>
     
       <item>
-        <title>How to configure Chalk</title>
-        <description>Learn more about the config file for Chalk and how to set it up properly.</description>
-        <pubDate>Sun, 16 Oct 2016 00:00:00 +0900</pubDate>
-        <link>/posts/configuring-chalk</link>
-        <guid isPermaLink="true">/posts/configuring-chalk</guid>
+        <title>Disorders</title>
+        <description>Attention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder which has three core symptoms: inattention, hyperactivity and impulsivity. According to adhd-institute.com there are between 5.29% - 7.1% of children and adolescents suffer from ADHD and there is a higher prevalence in males than females.</description>
+        <pubDate>Mon, 17 Oct 2016 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/posts/disorders</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/disorders</guid>
       </item>
     
-      <item>
-        <title>Chalk sample post with all elements</title>
-        <description>Have a look at all the predesigned elements you can use in Chalk.</description>
-        <pubDate>Sat, 15 Oct 2016 00:00:00 +0900</pubDate>
-        <link>/posts/chalk-sample-post-with-all-elements</link>
-        <guid isPermaLink="true">/posts/chalk-sample-post-with-all-elements</guid>
-      </item>
-    
->>>>>>> 96907016371846ade570b47bf9beb07e38db20fd
   </channel>
 </rss>

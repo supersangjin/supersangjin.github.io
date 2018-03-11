@@ -649,6 +649,47 @@ img {
   color: #fff;
   background-color: #121111; }
 
+.container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.photo {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-animation: round 24s infinite;
+          animation: round 24s infinite;
+  opacity: 0; }
+
+@-webkit-keyframes round {
+  20% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
+
+@keyframes round {
+  20% {
+    opacity: 1; }
+  40% {
+    opacity: 0; } }
+img:nth-child(1) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s; }
+
+img:nth-child(2) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s; }
+
+img:nth-child(3) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s; }
+
+img:nth-child(4) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
 .footer {
   display: block;
   padding-top: 35px;
@@ -731,7 +772,7 @@ img {
     vertical-align: bottom; }
 
 .grid-centered {
-  max-width: 650px;
+  max-width: 950px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -781,18 +822,22 @@ img {
   .grid-cell.with-11off {
     margin-left: 0; } }
 .about {
-  padding: 100px 0; }
+  padding: 30px 0; }
   .about h1 {
-    margin: 50px 0 15px; }
+    margin: 50px 0 15px;
+    font-weight: 200; }
+
+.row {
+  margin-bottom: 50px; }
 
 .article {
   display: block;
-  margin: 100px 0; }
+  margin: 30px 0; }
 
 .article-list {
   display: block;
   padding: 0;
-  margin: 50px 0;
+  margin: 30px 0;
   list-style: none; }
   .article-list li {
     position: relative;
@@ -830,6 +875,7 @@ img {
 .article-list-item h5 {
   position: relative;
   display: block;
+  font-weight: 400;
   padding-right: 25px;
   color: #121111;
   border-bottom: 1px solid transparent; }
@@ -844,6 +890,11 @@ img {
     transition: opacity 0.2s linear; }
   .article-list-item h5:hover svg {
     opacity: 1; }
+.article-list-item img {
+  float: right;
+  margin-right: 50px;
+  height: 150px;
+  width: 170px; }
 .article-list-item a {
   text-decoration: none; }
 .article-list-item p {
@@ -985,9 +1036,9 @@ img {
 
 .header-logo {
   display: inline-block;
-  font-family: "Cormorant Garamond", Courier, serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
   color: #000;
   text-decoration: none; }
 
@@ -1003,8 +1054,10 @@ img {
     .header-links li:first-child {
       margin-left: 0; }
     .header-links li a {
-      font-size: 18px;
-      color: #393636; }
+      font-size: 15px;
+      color: #393636;
+      text-decoration: none;
+      font-weight: 200; }
       .header-links li a svg {
         width: 16px;
         height: 16px;

@@ -1,0 +1,67 @@
+---
+layout: default_en
+title: "Corporation History"
+description: ""
+---
+
+<style>
+  .timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+  }
+  .timeline-item p {
+    font-size: 1rem;
+  }
+  .timeline-item::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .785rem;
+  }
+  .timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+  }
+  .timeline-item:last-child {
+    -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  }
+
+</style>
+
+<article class="article {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+  <h1>회사 연혁</h1>
+  <br/>
+  <br/>
+
+  <div class="article-content">
+    <div class="timeline-item" date-is='2017-9-5'>
+      <p>서울특별시 광진구 능동로120, 건국대학교 의학연구동소재
+        주식회사 트리뉴로텍 창립</p>
+    </div>
+
+    <div class="timeline-item" date-is='2017-9-5'>
+      <p>대표이사 신찬영 선임, 주요 주주 참여 확정</p>
+    </div>
+
+    <div class="timeline-item" date-is='2017-9-25'>
+      <p>과학기술정보통신부 특수목적법인 지원사업 수주: 총액 48.5억</p>
+    </div>
+  </div>
+</article>

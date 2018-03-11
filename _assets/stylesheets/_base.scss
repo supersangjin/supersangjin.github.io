@@ -165,15 +165,14 @@ $time_per_slide: 6;
 $total_animation_time: $time_per_slide * $slides;
 
 .container{
-  width: 910px;
-  height: 455px;
-  margin: 50px auto;
   position: relative;
-  margin-bottom: 0px;
+  width: 100%;
+  padding-bottom: 55%;
   background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
 }
 .photo{
+  height: 100%;
+  width: 100%;
   position:absolute;
   animation:round #{$total_animation_time}s infinite;
   opacity:0;

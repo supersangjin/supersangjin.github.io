@@ -94,3 +94,11 @@
   border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
+
+.rdservice-container{
+  display: flex;
+}
+
+.rdservice-box{
+  flex: 1;
+}

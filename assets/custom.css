@@ -141,7 +141,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
-  float: left;
 }
 @media (min-width: 40rem) {
   .cards__item {

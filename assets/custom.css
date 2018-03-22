@@ -149,7 +149,7 @@ img {
 }
 @media (min-width: 56rem) {
   .cards__item {
-    width: 33.3333%;
+    width: 30%;
   }
 }
 .card {
@@ -165,6 +165,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  float: left;
 }
 .card:hover .card__image {
   -webkit-filter: contrast(100%);

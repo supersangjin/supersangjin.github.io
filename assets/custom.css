@@ -259,6 +259,7 @@ img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  white-space: pre;
 }
 .table > thead > tr > th {
   font-weight: 400;

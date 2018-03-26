@@ -30,6 +30,7 @@
     float: none;
     background: #fff;
     opacity:0.6;
+    width:100%;
 }
 
 .header-nav ul ul li:hover
